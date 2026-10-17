@@ -1,0 +1,393 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body  style="background-color: #fff9ec;">
+    
+
+
+<nav class="navbar navbar-expand-lg pt-3 shadow-sm" style="background-color: #ffffff;">
+
+   
+
+    <div class="collapse navbar-collapse d-flex justify-content-between"   id="navbarTogglerDemo03">
+        <div class="d-flex justify-content-between align-items-center me-4 gap-2">
+           <i  class="d-flex align-items-center justify-content-center text-white  rounded-5
+    fa-solid fa-utensils mb-3"  style="width: 43px; height: 43px; background-color: #fe4426;">
+</i>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <h1 style="font-size: 24px;" class=" fw-bold text-gray-900 mb-0">
+                What's For Dinner
+              </h1>
+              <p class="fw-normalext-gray-500" style="font-size: 14px;">Your daily meal inspiration</p>
+        </li>
+        
+      </ul>
+      </div>
+     <div class="">
+            <button class="btn border-0 cursor-pointer ">
+         <i class="fa-solid bmhover fa-bookmark"></i>
+
+            </button>
+             <button   class="btn border-0 cursor-pointer ">
+      
+<i class=" fa-sharp fa-solid bmhover fa-clock-rotate-left"></i>
+
+
+            </button>
+    <button class="btn border-0 cursor-pointer ">
+      
+<i class="fa-solid bmhover fa-gear"></i>
+            </button>
+    <img  class="gap-2" style="width: 40px;border: #ffb86a 2px solid; border-radius: 50%;" src="avatar-4.jpg" alt="" srcset="">
+          </div>
+      </div>
+    </div>
+
+</nav>
+
+
+
+
+
+
+
+    
+<section>
+
+<!-- Nav tabs -->
+<div class="container">
+<div class="row justify-content-center g-0 mt-5 mb-5 shadow">
+
+<div class="col-5 position-relative ">
+
+  <div id="imagge">
+      
+  </div>
+<div class="position-absolute top-0 start-0  mt-4 mx-4 ">
+        <div class="d-flex align-items-center gap-2 bg-white rounded-pill px-3 py-2 shadow">
+
+            <i class="fa-solid fa-star text-warning"></i>
+
+            <span class="fw-semibold text-dark fs-6" id="rating-average">
+                4.6
+            </span>
+
+            <span class="text-secondary small" id="rating-quantity">
+                (421 reviews)
+            </span>
+
+        </div>
+    </div>
+    <div class="position-absolute bottom-0 start-50 translate-middle-x w-75 mb-3">
+
+        <div class="d-flex justify-content-evenly align-items-center bg-white rounded-5 text-center py-3">
+
+            <div class="d-flex flex-column align-items-center">
+                <i class="fa-solid fa-clock fs-4"></i>
+                <p class="mb-1 io">Prep Time</p>
+                <p class="mb-0 ip" id="prep-time-display">15 min</p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+                <i class="fa-solid fa-fire-burner fs-4"></i>
+                <p class="mb-1 io">Cook Time</p>
+                <p class="mb-0 ip" id="cook-time-display">60 min</p>
+            </div>
+
+            <div class="d-flex flex-column align-items-center">
+                <i class="fa-solid fa-users fs-4"></i>
+                <p class="mb-1 io">Servings</p>
+                <p class="mb-0 ip" id="servings-display">4 people</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="col-7 bg-white d-flex flex-column justify-content-center  des">
+
+
+
+
+<div class="d-flex w-100  mt-5 align-items-center justify-content-evenly">
+              <div class="m-l-nam-d">
+                <div class=" mb-3">
+                  <span class=" me-4 " id="difficulty-badge"  style="padding: 1px 8px; background-color: #dbfce7;color: #008236; border-radius: 12px;">Easy</span>
+                  <span class="" id="category-badge" style="padding: 1px 8px; background-color: #dbeafe; color: #1462e9; border-radius: 12px;">Italian</span>
+                </div>
+                <h3 class="fs-3 fw-bold" id="recipe-name">Creamy Spaghetti Carbonara</h3>
+                <p class="" id="recipe-description">A classic Italian pasta dish with eggs, cheese, and pancetta</p>
+              </div>
+              <div class="fs-4">
+                <button  class="btn border-0 cursor-pointer ">
+            <i class="d-flex align-items-center justify-content-center text-white  rounded-1 fa-solid   fa-solid  shar-bookmark fa-bookmark"  ></i>
+
+                <button  class="btn border-0  cursor-pointer ">
+          <i class="d-flex align-items-center justify-content-center text-white  rounded-1 fa-solid  shar-bookmark fa-share-nodes"></i>
+
+              </div>
+            </div>
+ 
+
+
+<hr style=" width: 88%" class=" mx-auto">
+
+
+
+        <ul class="nav mx-5 gap-5 fs-5 d-flex justify-content-evenly nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+            role="tab" aria-controls="home" aria-selected="true"><span>Ingredients</span></button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">Instructions</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button"
+            role="tab" aria-controls="messages" aria-selected="false">Nutrition</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button"
+            role="tab" aria-controls="settings" aria-selected="false">Chef's Tips</button>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content mx-5  px-2 h-75 mt-4 ">
+
+<!-- 2 Instructions-->
+    <div class="tab-pane overflow-auto  mx-4   p-2" style="height: 400px;"  id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+  <div class="d-flex flex-column  gap-2" >
+
+
+     <div>
+     
+   </div>
+            <div>
+        
+   </div>
+
+
+  </div>
+    </div>
+
+<!-- 1Ingredients -->
+    <div class="tab-pane active  overflow-auto mx-4"    id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0"> 
+
+      <div class="d-flex flex-column">
+     
+          
+          </div>
+          </div>
+
+            <!-- 3Nutrition -->
+
+<div class="tab-pane " id="messages" role="tabpanel"
+     aria-labelledby="messages-tab" tabindex="0">
+
+    <div class="row row-cols-1 row-cols-md-2 g-3">
+
+        <!-- Calories -->
+        <div class="col">
+            <div class="d-flex align-items-center justify-content-between p-3 rounded-4 h-100"
+                 style="background-color: #f9fafb;">
+
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center justify-content-center rounded-3 me-3 flex-shrink-0"
+                         style="width: 40px; height: 40px; background-color: #ffedd5; color: #ea580c;">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <span class="text-secondary fw-medium nutrition-label">Calories</span>
+                </div>
+
+                <span class="fw-bold text-dark nutrition-value" id="calories-value">520 kcal</span>
+            </div>
+        </div>
+
+        <!-- Protein -->
+        <div class="col">
+            <div class="d-flex align-items-center justify-content-between p-3 rounded-4 h-100"
+                 style="background-color: #f9fafb;">
+
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center justify-content-center rounded-3 me-3 flex-shrink-0"
+                         style="width: 40px; height: 40px; background-color: #dbeafe; color: #2563eb;">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <span class="text-secondary fw-medium nutrition-label">Protein</span>
+                </div>
+
+                <span class="fw-bold text-dark nutrition-value" id="protein-value">28g</span>
+            </div>
+        </div>
+
+        <!-- Carbohydrates -->
+        <div class="col">
+            <div class="d-flex align-items-center justify-content-between p-3 rounded-4 h-100"
+                 style="background-color: #f9fafb;">
+
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center justify-content-center rounded-3 me-3 flex-shrink-0"
+                         style="width: 40px; height: 40px; background-color: #fef3c7; color: #ca8a04;">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <span class="text-secondary fw-medium nutrition-label">Carbohydrates</span>
+                </div>
+
+                <span class="fw-bold text-dark nutrition-value" id="carbs-value">62g</span>
+            </div>
+        </div>
+
+        <!-- Fat -->
+        <div class="col">
+            <div class="d-flex align-items-center justify-content-between p-3 rounded-4 h-100"
+                 style="background-color: #f9fafb;">
+
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center justify-content-center rounded-3 me-3 flex-shrink-0"
+                         style="width: 40px; height: 40px; background-color: #fee2e2; color: #dc2626;">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <span class="text-secondary fw-medium nutrition-label">Fat</span>
+                </div>
+
+                <span class="fw-bold text-dark nutrition-value" id="fat-value">18g</span>
+            </div>
+        </div>
+
+        <!-- Fiber -->
+        <div class="col">
+            <div class="d-flex align-items-center justify-content-between p-3 rounded-4 h-100"
+                 style="background-color: #f9fafb;">
+
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center justify-content-center rounded-3 me-3 flex-shrink-0"
+                         style="width: 40px; height: 40px; background-color: #dcfce7; color: #16a34a;">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <span class="text-secondary fw-medium nutrition-label">Fiber</span>
+                </div>
+
+                <span class="fw-bold text-dark nutrition-value" id="fiber-value">3g</span>
+            </div>
+        </div>
+
+        <!-- Sodium -->
+        <div class="col">
+            <div class="d-flex align-items-center justify-content-between p-3 rounded-4 h-100"
+                 style="background-color: #f9fafb;">
+
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center justify-content-center rounded-3 me-3 flex-shrink-0"
+                         style="width: 40px; height: 40px; background-color: #fce7f3; color: #db2777;">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <span class="text-secondary fw-medium nutrition-label">Sodium</span>
+                </div>
+
+                <span class="fw-bold text-dark nutrition-value" id="sodium-value">680mg</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+      <!-- Chefs Tips -->
+    <div class="tab-pane " id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
+     <div class="d-flex flex-column gap-5" style="gap: 20px;">
+
+
+    <div class="d-flex align-items-start p-3 rounded-4 border-start border-4"
+         style="background-color: #fffbeb; border-color: #fbbf24 !important;">
+        <i class="fa-solid fa-circle-check   fs-5"
+           style="color: #d97706;"></i>
+        <p class="mb-0" style="color: #374151;">
+            Marinate chicken overnight for deeper flavor
+        </p>
+    </div>
+
+    <div class="d-flex align-items-start p-3 rounded-4 border-start border-4"
+         style="background-color: #fffbeb; border-color: #fbbf24 !important;">
+        <i class="fa-solid fa-circle-check me-3 mt-1 fs-5"
+           style="color: #d97706;"></i>
+        <p class="mb-0" style="color: #374151;">
+            Use fresh ingredients
+        </p>
+    </div>
+
+    <div class="d-flex align-items-start p-3 rounded-4 border-start border-4"
+         style="background-color: #fffbeb; border-color: #fbbf24 !important;">
+        <i class="fa-solid fa-circle-check me-3 mt-1 fs-5"
+           style="color: #d97706;"></i>
+        <p class="mb-0" style="color: #374151;">
+            Cook over medium heat
+        </p>
+    </div>
+
+ 
+    <div class="d-flex align-items-start p-3 rounded-4 border-start border-4"
+         style="background-color: #fffbeb; border-color: #fbbf24 !important;">
+        <i class="fa-solid fa-circle-check me-3 mt-1 fs-5"
+           style="color: #d97706;"></i>
+        <p class="mb-0" style="color: #374151;">
+            Serve while warm
+        </p>
+    </div>
+
+</div>
+    </div>
+</div>
+<hr class="hrr mx-auto">
+<div class="mb-5 mt-5 mx-5 ">
+  
+<button onclick="displayRandomProduct()" class=" btimport btn border-0 cursor-pointer fs-5 fw-bold">
+<i class="fa-solid fa-arrows-rotate"></i> Try Another Recipe</button>
+</div>
+</div>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
