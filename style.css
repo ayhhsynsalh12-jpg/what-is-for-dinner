@@ -24,7 +24,7 @@ width: 43px; height: 43px;background-color: #fff9ec; color: #fe4426 !important;
     background-color: #ffd6a7;
 }
 
-.tab-content{display: flex;flex-direction: column;
+.tab-content{display: flex;flex-direction: column;width: 300px;
 }
 #home{
  
